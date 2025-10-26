@@ -1,0 +1,14 @@
+{
+    "showHero": true,
+    "hero": {
+        "heading": "Desarrollos",
+        "subheading": "Sitio Web para tu Inmobiliaria",
+        "ctaText": "Solicitar Informes",
+        "ctaHref": "/admin"
+    },
+    "cards": [
+        {"title": "Card 1", "body": "some text"},
+        {"title": "Card 2", "body": "more text"}
+
+    ]
+}

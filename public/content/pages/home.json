@@ -1,0 +1,73 @@
+{
+    "showHero": true,
+    "hero": {
+        "heading": "Sitio Web para tu Inmobiliaria",
+        "subheading": "Publica tus propiedades facilmente en un sitio web personalizado a tu marca",
+        "ctaText": "Solicitar Informes",
+        "ctaHref": "/admin",
+        "bgImage": "/assets/images/home_hero_background.jpg"
+    },
+    "sections": [
+        {
+        "type": "content",
+        "id": "home-content-1",
+        "bgColor": "transparent",
+        "textColor": "#111",
+        "cardMinHeight": "300px",
+        "cardH3Color": "#ffffff",
+        "customStyle": "padding-left: 15em; ",
+        "align": "center",
+        "maxWidth": "800px",
+        "sectionSpan": 2,
+        "content": [
+        {"tag": "h2", "text": "Impulsa tu inmobiliaria con tecnología inteligente", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Descubre cómo nuestra plataforma transforma la gestión inmobiliaria: <b> publica, administra y muestra tus propiedades en un solo lugar</b>.<br><br> Automatiza tareas, genera más contactos y convierte visitantes en clientes con una presencia digital potente y moderna." },
+        {"tag": "p", "text": "<b>Comienza hoy y lleva tu inmobiliaria al siguiente nivel.</b>", "itemCustomStyle": "color: #ff5201;" }
+
+    ]
+         },
+
+         {
+        "type": "content",
+        "id": "home-content-2",
+        "bgColor": "transparent",
+        "textColor": "#111",
+        "cardMinHeight": "300px",
+        "cardH3Color": "#ffffff",
+        "customStyle": "padding-right: 15em;",
+        "align": "center",
+        "maxWidth": "800px",
+        "sectionSpan": 2,
+        "content": [
+        {"tag": "img", 
+        "src": "/assets/images/home_main.png",
+        "alt": "alt text",
+        "width": "100%",
+        "itemCustomStyle": "border: 1px solid #00000017;"
+    }
+
+    ]
+         },
+         
+         {
+        "type": "cards",
+        "id": "gallery",
+        "bgColor": "#f5f1ed",
+        "textColor": "#111",
+        "cardMinHeight": "300px",
+        "cardH3Color": "#ffffff",
+        "title": "Una plataforma inteligente para gestionar tu negocio inmobiliario",
+        "cards": [
+        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/assets/images/home_gestion.png", "span":3},
+        {"title": "Seguimiento de Prospectos", "body": "Centraliza tus contactos y da seguimiento en tiempo real para cerrar más oportunidades.", "image": "/assets/images/home_gestion.png", "span":3},
+        {"title": "Colaboración con Asesores", "body": "Comparte propiedades y clientes con tu equipo para trabajar de forma más rápida y organizada.", "image": "/assets/images/home_gestion.png", "span":3}
+
+    ]
+         }
+
+       
+    ]
+    
+    
+    
+}

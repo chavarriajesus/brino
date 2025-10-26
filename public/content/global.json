@@ -1,0 +1,9 @@
+{
+    "siteTitle": "BRINO",
+    "nav": [
+        {"label": "Servicios", "href":"/servicios"},
+        {"label": "Desarrollos", "href":"/desarrollos"}
+        
+    ],
+    "footerText": "2025 BRINO"
+}
