@@ -91,16 +91,34 @@ footer{background: #001127; text-align: center;padding: 1rem 2.5rem; font-size: 
     flex-wrap: wrap;
 }
 
+.nav ul { display: flex; gap:1.5rem; list-style: none; margin: 0; padding: 0;}
+.nav a {text-decoration: none; color: #fff;}
+
 .nav a{
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem;
 }
+
+.nav a.btn-login {
+background: #ff5201;
+color: #ffffff;
+padding: 0.5rem 1rem;
+border-radius: 3px;
+font-weight: 400;
+transition: all .2s ease;
+
+}
+.nav a.btn-login:hover {background: #d74805;}
 
 @media (min-width: 640px) {
     .header-grid{grid-template-columns: auto 1fr;}
     .nav{justify-self: end;}
 
 }
+
+
+
 
 /* Hero */
 
@@ -109,3 +127,49 @@ footer{background: #001127; text-align: center;padding: 1rem 2.5rem; font-size: 
 .hero h2 {margin: 0 0 0.5rem 0; font-size: 2rem;}
 .hero p{ margin: 0 0 1.5rem 0; opacity: .85;}
 .hero .btn{display: inline-block; background: #fff; color: #001127; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 600;}
+
+
+/* Container */
+.container-section {
+  width: 100%;
+  background-color: var(--section-bg, transparent);
+  color: var(--section-fg, #111);
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+  .container-grid.reverse .container-item:first-child { order: 1; }
+  .container-grid.reverse .container-item:last-child { order: 2; }
+
+
+@media (min-width: 960px) {
+    .container-grid {
+    grid-template-columns:  repeat(12, 1fr);
+  }
+
+.container-item:first-child { order: 1; }
+.container-item:last-child { order: 2; }
+
+  .container-grid.reverse .container-item:first-child { order: 2; }
+  .container-grid.reverse .container-item:last-child { order: 1; }
+
+    .container-item.span-1{grid-column: 1 / -1; }
+    .container-item.span-2{grid-column: span 6; }
+    .container-item.span-3{grid-column: span 4; }
+    .container-item.span-4{grid-column: span 3; }
+    .container-item.span-6{grid-column: span 2; }
+}

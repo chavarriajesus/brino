@@ -17,13 +17,13 @@ function renderHeader(global) {
 
   header.innerHTML = `
     <div class="header-grid">
-      <a href="/" class="brand" aria-label="${global.siteTitle}">
+      <a href="/" class="brand"  aria-label="${global.siteTitle}">
         <img src="/assets/images/logo_brino.png" onerror="this.src='/assets/images/logo_brino.png'"
              alt="${global.siteTitle}" class="brand-logo">
       </a>
       <nav class="nav">
         ${(global.nav || [])
-          .map((i) => `<a href="${i.href}">${i.label}</a>`)
+          .map((i) => `<a href="${i.href}" class="${i.class || ''}" >${i.label}</a>`)
           .join("")}
       </nav>
     </div>
@@ -188,6 +188,59 @@ function renderContentSection(sec, main) {
     </section>
   `);
 }
+
+function renderContainerSection(sec, main) {
+  const styleVars = [];
+  if (sec.bgColor) styleVars.push(`--section-bg:${sec.bgColor}`);
+  if (sec.textColor) styleVars.push(`--section-fg:${sec.textColor}`);
+  if (sec.maxWidth) styleVars.push(`--section-max:${sec.maxWidth}`);
+  if (sec.align) styleVars.push(`--section-align:${sec.align}`);
+  if (sec.customStyle) styleVars.push(`${sec.customStyle}`);
+  const sectionStyle = styleVars.length ? ` style="${styleVars.join(';')}"` : '';
+  const idAttr = sec.id ? ` id="${sec.id}"` : '';
+  const sectionSpanClass = sec.sectionSpan ? `span-${sec.sectionSpan}` : '';
+
+  // Build each column
+  const columns = (sec.content || []).map(col => {
+    const colStyleVars = [];
+    if (col.align) colStyleVars.push(`text-align:${col.align};`);
+    if (col.customStyle) colStyleVars.push(col.customStyle);
+    const colStyle = colStyleVars.length ? ` style="${colStyleVars.join(';')}"` : '';
+    const colId = col.id ? ` id="${col.id}"` : '';
+    const itemSpanClass = col.itemSpan ? `span-${col.itemSpan}` : '';
+
+    // Build items within the column
+    const colItems = (col.items || []).map(b => {
+      const tag = (b.tag || 'p').toLowerCase();
+      const safeTags = ['h1','h2','h3','h4','h5','h6','p','ul','ol','li','blockquote','img'];
+      if (!safeTags.includes(tag)) return '';
+
+      const itemStyleVars = [];
+      if (b.itemCustomStyle) itemStyleVars.push(b.itemCustomStyle);
+      if (b.width) itemStyleVars.push(`width:${b.width};`);
+      const itemStyle = itemStyleVars.length ? ` style="${itemStyleVars.join(';')}"` : '';
+
+      if (tag === 'img') {
+        const src = b.src || '';
+        const alt = b.alt || '';
+        return `<img src="${src}" alt="${alt}" ${itemStyle}>`;
+      }
+
+      return `<${tag} ${itemStyle}>${b.text || ''}</${tag}>`;
+    }).join('');
+
+    return `<div class="container-item ${itemSpanClass}" ${colId}${colStyle}>${colItems}</div>`;
+  }).join('');
+
+  const reverseClass = sec.reverse ? 'reverse' : '';
+  main.insertAdjacentHTML('beforeend', `
+    <section class="section ${sectionSpanClass} container-section"${idAttr}${sectionStyle}>
+      <div class="container-grid ${reverseClass} ">${columns}</div>
+    </section>
+  `);
+}
+
+
 function renderSections(page){
   const main = document.querySelector('#main');
   if (!main) return;
@@ -196,6 +249,7 @@ function renderSections(page){
   sections.forEach(sec => {
     if (sec.type === 'cards') return renderCardsSection(sec, main);
     if (sec.type === 'content') return renderContentSection(sec, main);
+    if (sec.type === 'container') return renderContainerSection(sec, main);
 
     
   });

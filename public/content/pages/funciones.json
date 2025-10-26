@@ -1,0 +1,125 @@
+{
+    "showHero": true,
+    "hero": {
+        "heading": "Gestiona tu inventario y muestra tus propiedades en línea, sin complicaciones.",
+        "subheading": "Administra tus desarrollos, recibe prospectos y mantén tu sitio web siempre actualizado desde una sola plataforma.",
+        "ctaText": "Probar gratis",
+        "ctaHref": "/admin",
+        "bgImage": "/assets/images/features_hero_bg.jpg"
+    },
+   "sections": [
+       
+         
+         {
+        "type": "cards",
+        "id": "gallery",
+        "bgColor": "#f5f1ed",
+        "textColor": "#111",
+        "cardMinHeight": "300px",
+        "cardH3Color": "#ffffff",
+        "title": "Todo lo que necesitas para operar tu inmobiliaria digitalmente",
+        "cards": [
+        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/assets/images/home_gestion.png", "span":3},
+        {"title": "Sitio web inmobiliario", "body": "Muestra tus propiedades con un diseño profesional, optimizado para atraer prospectos.", "image": "/assets/images/home_gestion.png", "span":3},
+        {"title": "Seguimiento de contactos", "body": "Registra cada interacción y da seguimiento fácilmente desde el panel.", "image": "/assets/images/home_gestion.png", "span":3}
+
+    ]
+         },
+
+        {
+  "type": "container",
+  "id": "home-container-1",
+  "bgColor": "transparent",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "padding-left: 14em;",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Administra tus propiedades desde un panel centralizado", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Carga tus desarrollos, casas o departamentos en segundos. Agrega fotos, precios, ubicaciones, metros cuadrados y toda la información relevante en un solo panel intuitivo. <br><br>Cada actualización se refleja automáticamente en tu sitio web, sin necesidad de depender de un programador o equipo técnico.<br><br>Con nuestra plataforma, tu inventario siempre estará actualizado, ordenado y listo para ser visto por tus prospectos." }
+ 
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "padding-right: 14em;",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+      ]
+    }
+  ]
+}
+,
+{
+  "type": "container",
+  "id": "home-container-2",
+  "bgColor": "transparent",
+  "reverse": true,
+  "customStyle" : "flex-direction: column-reverse;",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "padding-right: 14em;",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Un sitio web diseñado para vender propiedades, no solo mostrarlas", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Obtén un sitio web moderno, rápido y totalmente personalizado con tu marca. Muestra tus propiedades con galerías de imágenes, mapas interactivos y fichas detalladas que inspiran confianza en tus clientes.<br><br>Cada contacto interesado puede escribirte directamente desde el sitio, y el registro se guarda automáticamente en tu panel para seguimiento.<br><br>Nosotros nos encargamos de la parte técnica; tú solo sube tus propiedades y empieza a recibir prospectos." }
+
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "padding-left: 14em;",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+      ]
+    }
+  ]
+}
+,
+{
+  "type": "container",
+  "id": "home-container-3",
+  "bgColor": "#f5f1ed",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "padding-left: 14em;",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Automatiza tareas y enfócate en vender", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Agrega a tus asesores, asigna propiedades y comparte prospectos sin perder el control de tu información.<br><br>Cada usuario puede acceder a su propio panel para gestionar los inmuebles que tiene asignados, actualizar datos y registrar avances con clientes.<br><br>Mantén a todo tu equipo alineado, sin hojas de cálculo ni mensajes sueltos. Con una gestión centralizada, todos trabajan con la misma información y las oportunidades se cierran más rápido." }
+
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "padding-right: 14em;",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+      ]
+    }
+  ]
+}
+
+         
+
+       
+    ]
+}

@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get(['/', '/servicios', '/desarrollos'], (req, res) =>
+app.get(['/', '/funciones', '/desarrollos'], (req, res) =>
     res.sendFile(path.join(__dirname, 'public', 'index.html'))
 );
 
