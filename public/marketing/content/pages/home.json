@@ -5,7 +5,7 @@
         "subheading": "Publica tus propiedades facilmente en un sitio web personalizado a tu marca",
         "ctaText": "Solicitar Informes",
         "ctaHref": "/admin",
-        "bgImage": "/assets/images/home_hero_background.jpg"
+        "bgImage": "/marketing/assets/images/home_hero_background.jpg"
     },
     "sections": [
         {
@@ -40,7 +40,7 @@
         "sectionSpan": 2,
         "content": [
         {"tag": "img", 
-        "src": "/assets/images/home_main.png",
+        "src": "/marketing/assets/images/home_main.png",
         "alt": "alt text",
         "width": "100%",
         "itemCustomStyle": "border: 1px solid #00000017;"
@@ -58,9 +58,9 @@
         "cardH3Color": "#ffffff",
         "title": "Una plataforma inteligente para gestionar tu negocio inmobiliario",
         "cards": [
-        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/assets/images/home_gestion.png", "span":3},
-        {"title": "Seguimiento de Prospectos", "body": "Centraliza tus contactos y da seguimiento en tiempo real para cerrar más oportunidades.", "image": "/assets/images/home_gestion.png", "span":3},
-        {"title": "Colaboración con Asesores", "body": "Comparte propiedades y clientes con tu equipo para trabajar de forma más rápida y organizada.", "image": "/assets/images/home_gestion.png", "span":3}
+        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
+        {"title": "Seguimiento de Prospectos", "body": "Centraliza tus contactos y da seguimiento en tiempo real para cerrar más oportunidades.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
+        {"title": "Colaboración con Asesores", "body": "Comparte propiedades y clientes con tu equipo para trabajar de forma más rápida y organizada.", "image": "/marketing/assets/images/home_gestion.png", "span":3}
 
     ]
          }

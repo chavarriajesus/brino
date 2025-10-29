@@ -18,7 +18,7 @@ function renderHeader(global) {
   header.innerHTML = `
     <div class="header-grid">
       <a href="/" class="brand"  aria-label="${global.siteTitle}">
-        <img src="/assets/images/logo_brino.png" onerror="this.src='/assets/images/logo_brino.png'"
+        <img src="/marketing/assets/images/logo_brino.png" onerror="this.src='/marketing/assets/images/logo_brino.png'"
              alt="${global.siteTitle}" class="brand-logo">
       </a>
       <nav class="nav">
@@ -325,8 +325,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Hardcode home.json while we debug slug logic
     const [global, page] = await Promise.all([
-      loadJSON("/content/global.json"),
-      loadJSON(`/content/pages/${slug}.json`),
+      loadJSON("/marketing/content/global.json"),
+      loadJSON(`/marketing/content/pages/${slug}.json`),
     ]);
 
     console.log("[boot] global:", global);
