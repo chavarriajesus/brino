@@ -5,9 +5,9 @@
         "subheading": "Administra tus desarrollos, recibe prospectos y mantén tu sitio web siempre actualizado desde una sola plataforma.",
         "ctaText": "Probar gratis",
         "ctaHref": "/admin",
-        "bgImage": "/assets/images/features_hero_bg.jpg"
+        "bgImage": "/marketing/assets/images/home_hero_background.jpg"
     },
-   "sections": [
+    "sections": [
        
          
          {
@@ -19,16 +19,16 @@
         "cardH3Color": "#ffffff",
         "title": "Todo lo que necesitas para operar tu inmobiliaria digitalmente",
         "cards": [
-        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/assets/images/home_gestion.png", "span":3},
-        {"title": "Sitio web inmobiliario", "body": "Muestra tus propiedades con un diseño profesional, optimizado para atraer prospectos.", "image": "/assets/images/home_gestion.png", "span":3},
-        {"title": "Seguimiento de contactos", "body": "Registra cada interacción y da seguimiento fácilmente desde el panel.", "image": "/assets/images/home_gestion.png", "span":3}
+        {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
+        {"title": "Sitio web inmobiliario", "body": "Muestra tus propiedades con un diseño profesional, optimizado para atraer prospectos.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
+        {"title": "Seguimiento de contactos", "body": "Registra cada interacción y da seguimiento fácilmente desde el panel.", "image": "/marketing/assets/images/home_gestion.png", "span":3}
 
     ]
          },
 
         {
   "type": "container",
-  "id": "home-container-1",
+  "id": "home-container-1",  
   "bgColor": "transparent",
   "textColor": "#111",
   "sectionSpan": 1,
@@ -36,7 +36,8 @@
     {
       "id": "left-col",
       "align": "left",
-      "customStyle": "padding-left: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
       "itemSpan": 2,
       "items": [
         {"tag": "h2", "text": "Administra tus propiedades desde un panel centralizado", "itemCustomStyle": "font-size: 2em;"},
@@ -47,10 +48,11 @@
     {
       "id": "right-col",
       "align": "right",
-      "customStyle": "padding-right: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
       "itemSpan": 2,
       "items": [
-        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" } 
       ]
     }
   ]
@@ -58,7 +60,7 @@
 ,
 {
   "type": "container",
-  "id": "home-container-2",
+  "id": "home-container-2", 
   "bgColor": "transparent",
   "reverse": true,
   "customStyle" : "flex-direction: column-reverse;",
@@ -68,7 +70,8 @@
     {
       "id": "left-col",
       "align": "left",
-      "customStyle": "padding-right: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
       "itemSpan": 2,
       "items": [
         {"tag": "h2", "text": "Un sitio web diseñado para vender propiedades, no solo mostrarlas", "itemCustomStyle": "font-size: 2em;"},
@@ -79,10 +82,11 @@
     {
       "id": "right-col",
       "align": "right",
-      "customStyle": "padding-left: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
       "itemSpan": 2,
       "items": [
-        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" }
       ]
     }
   ]
@@ -98,7 +102,8 @@
     {
       "id": "left-col",
       "align": "left",
-      "customStyle": "padding-left: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
       "itemSpan": 2,
       "items": [
         {"tag": "h2", "text": "Automatiza tareas y enfócate en vender", "itemCustomStyle": "font-size: 2em;"},
@@ -109,10 +114,11 @@
     {
       "id": "right-col",
       "align": "right",
-      "customStyle": "padding-right: 14em;",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
       "itemSpan": 2,
       "items": [
-        { "tag": "img", "src": "/assets/images/home_main.png", "alt": "Panel de propiedades" }
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" }      
       ]
     }
   ]

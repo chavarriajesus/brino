@@ -3,7 +3,7 @@
     "nav": [
         {"label": "Funciones", "href":"/funciones"},
         {"label": "Desarrollos", "href":"/desarrollos"},
-        {"label": "Login", "href":"/desarrollos", "class":"btn-login"}
+        {"label": "Login", "href":"/app", "class":"btn-login"}
         
     ],
     "footerText": "2025 BRINO"

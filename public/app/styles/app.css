@@ -1,7 +1,7 @@
 :root { --bg:#0a0f1a; --fg:#fff; --accent:#fff; }
 body { margin:0; background:#0a0f1a; color:#fff; font-family:system-ui, Arial, sans-serif; }
-.page.login { min-height:100vh; display:grid; place-items:center; padding:2rem; }
-.login-box {background: #0a1839; color: #111; width: min(300px, 90%); padding: 2rem 2.5rem; border-radius: 12px; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;}
+.page.login { min-height:100vh; display:grid; place-items:center; padding:0rem; }
+.login-box {background: #0a1839; color: #111; width: min(300px, 80%); padding: 2rem 2.5rem; border-radius: 12px; display: flex; flex-direction: column; align-items: center; gap: 1.5rem;}
 
 .login-form { display:flex; gap:1rem; width:100%; flex-direction: column;}
 .login-form input {

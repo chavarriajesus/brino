@@ -8,46 +8,7 @@
         "bgImage": "/marketing/assets/images/home_hero_background.jpg"
     },
     "sections": [
-        {
-        "type": "content",
-        "id": "home-content-1",
-        "bgColor": "transparent",
-        "textColor": "#111",
-        "cardMinHeight": "300px",
-        "cardH3Color": "#ffffff",
-        "customStyle": "padding-left: 15em; ",
-        "align": "center",
-        "maxWidth": "800px",
-        "sectionSpan": 2,
-        "content": [
-        {"tag": "h2", "text": "Impulsa tu inmobiliaria con tecnología inteligente", "itemCustomStyle": "font-size: 2em;"},
-        {"tag": "p", "text": "Descubre cómo nuestra plataforma transforma la gestión inmobiliaria: <b> publica, administra y muestra tus propiedades en un solo lugar</b>.<br><br> Automatiza tareas, genera más contactos y convierte visitantes en clientes con una presencia digital potente y moderna." },
-        {"tag": "p", "text": "<b>Comienza hoy y lleva tu inmobiliaria al siguiente nivel.</b>", "itemCustomStyle": "color: #ff5201;" }
-
-    ]
-         },
-
-         {
-        "type": "content",
-        "id": "home-content-2",
-        "bgColor": "transparent",
-        "textColor": "#111",
-        "cardMinHeight": "300px",
-        "cardH3Color": "#ffffff",
-        "customStyle": "padding-right: 15em;",
-        "align": "center",
-        "maxWidth": "800px",
-        "sectionSpan": 2,
-        "content": [
-        {"tag": "img", 
-        "src": "/marketing/assets/images/home_main.png",
-        "alt": "alt text",
-        "width": "100%",
-        "itemCustomStyle": "border: 1px solid #00000017;"
-    }
-
-    ]
-         },
+       
          
          {
         "type": "cards",
@@ -56,18 +17,115 @@
         "textColor": "#111",
         "cardMinHeight": "300px",
         "cardH3Color": "#ffffff",
-        "title": "Una plataforma inteligente para gestionar tu negocio inmobiliario",
+        "title": "Todo lo que necesitas para operar tu inmobiliaria digitalmente",
         "cards": [
         {"title": "Gestión de Propiedades", "body": "Administra, publica y actualiza tus inmuebles desde una sola plataforma, siempre visibles en tu sitio web.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
-        {"title": "Seguimiento de Prospectos", "body": "Centraliza tus contactos y da seguimiento en tiempo real para cerrar más oportunidades.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
-        {"title": "Colaboración con Asesores", "body": "Comparte propiedades y clientes con tu equipo para trabajar de forma más rápida y organizada.", "image": "/marketing/assets/images/home_gestion.png", "span":3}
+        {"title": "Sitio web inmobiliario", "body": "Muestra tus propiedades con un diseño profesional, optimizado para atraer prospectos.", "image": "/marketing/assets/images/home_gestion.png", "span":3},
+        {"title": "Seguimiento de contactos", "body": "Registra cada interacción y da seguimiento fácilmente desde el panel.", "image": "/marketing/assets/images/home_gestion.png", "span":3}
 
     ]
-         }
+         },
+
+        {
+  "type": "container",
+  "id": "home-container-1",  
+  "bgColor": "transparent",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Administra tus propiedades desde un panel centralizado", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Carga tus desarrollos, casas o departamentos en segundos. Agrega fotos, precios, ubicaciones, metros cuadrados y toda la información relevante en un solo panel intuitivo. <br><br>Con nuestra plataforma, tu inventario siempre estará actualizado, ordenado y listo para ser visto por tus prospectos." }
+ 
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" } 
+      ]
+    }
+  ]
+}
+,
+{
+  "type": "container",
+  "id": "home-container-2", 
+  "bgColor": "transparent",
+  "reverse": true,
+  "customStyle" : "flex-direction: column-reverse;",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Un sitio web diseñado para vender propiedades", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Obtén un sitio web moderno, rápido y totalmente personalizado con tu marca. Muestra tus propiedades con galerías de imágenes, mapas interactivos y fichas detalladas que inspiran confianza en tus clientes.<br><br>Cada contacto interesado puede escribirte directamente desde el sitio, y el registro se guarda automáticamente en tu panel para seguimiento." }
+
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" }
+      ]
+    }
+  ]
+}
+,
+{
+  "type": "container",
+  "id": "home-container-3",
+  "bgColor": "#f5f1ed",
+  "textColor": "#111",
+  "sectionSpan": 1,
+  "content": [
+    {
+      "id": "left-col",
+      "align": "left",
+      "customStyle": "",
+      "addClass": "home-container-left-col",
+      "itemSpan": 2,
+      "items": [
+        {"tag": "h2", "text": "Automatiza tareas y enfócate en vender", "itemCustomStyle": "font-size: 2em;"},
+        {"tag": "p", "text": "Agrega a tus asesores, asigna propiedades y comparte prospectos sin perder el control de tu información.<br><br>Cada usuario puede acceder a su propio panel para gestionar los inmuebles que tiene asignados, actualizar datos y registrar avances con clientes." }
+
+      ]
+    },
+    {
+      "id": "right-col",
+      "align": "right",
+      "customStyle": "",
+      "addClass": "home-container-right-col",
+      "itemSpan": 2,
+      "items": [
+        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" }      
+      ]
+    }
+  ]
+}
+
+         
 
        
     ]
-    
-    
-    
 }

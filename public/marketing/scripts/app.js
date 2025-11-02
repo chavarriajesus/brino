@@ -21,13 +21,28 @@ function renderHeader(global) {
         <img src="/marketing/assets/images/logo_brino.png" onerror="this.src='/marketing/assets/images/logo_brino.png'"
              alt="${global.siteTitle}" class="brand-logo">
       </a>
-      <nav class="nav">
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
         ${(global.nav || [])
           .map((i) => `<a href="${i.href}" class="${i.class || ''}" >${i.label}</a>`)
           .join("")}
       </nav>
     </div>
   `;
+
+  //toggle
+  const btn = header.querySelector('.nav-toggle');
+  const nav = header.querySelector('#primary-nav');
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    nav.classList.toggle('open', !open);
+  });
 }
 
 function renderHero(page) {
@@ -208,6 +223,7 @@ function renderContainerSection(sec, main) {
     const colStyle = colStyleVars.length ? ` style="${colStyleVars.join(';')}"` : '';
     const colId = col.id ? ` id="${col.id}"` : '';
     const itemSpanClass = col.itemSpan ? `span-${col.itemSpan}` : '';
+    const addClass = col.addClass ? `${col.addClass}` : '';
 
     // Build items within the column
     const colItems = (col.items || []).map(b => {
@@ -229,13 +245,13 @@ function renderContainerSection(sec, main) {
       return `<${tag} ${itemStyle}>${b.text || ''}</${tag}>`;
     }).join('');
 
-    return `<div class="container-item ${itemSpanClass}" ${colId}${colStyle}>${colItems}</div>`;
+    return `<div class="container-item ${itemSpanClass} ${addClass}" ${colId}${colStyle}>${colItems}</div>`;
   }).join('');
 
   const reverseClass = sec.reverse ? 'reverse' : '';
   main.insertAdjacentHTML('beforeend', `
     <section class="section ${sectionSpanClass} container-section"${idAttr}${sectionStyle}>
-      <div class="container-grid ${reverseClass} ">${columns}</div>
+      <div class="container-grid ${reverseClass} " style="max-width: 1400px;">${columns}</div>
     </section>
   `);
 }
@@ -303,7 +319,7 @@ if (!footer) return;
     <div  class="footer-item span-2" style="justify-self: start; color: #fff;">Copyright BRINO 2025</div> 
     <div class="footer-item span-2" style="justify-self: end">
       <a href="/" class="brand" aria-label="${global.siteTitle}">
-        <img src="/assets/images/logo_brino.png" onerror="this.src='/assets/images/logo_brino.png'"
+        <img src="/marketing/assets/images/logo_brino.png" onerror="this.src='/marketing/assets/images/logo_brino.png'"
              alt="${global.siteTitle}" class="brand-logo" style="height: 25px;">
       </a>
     </div>  
