@@ -142,8 +142,41 @@ transition: all .2s ease;
 .hero{ background: #000000; background-size: cover; background-position: 50%; color: #fff; width: 100%; padding: 8rem 1rem; text-align: center;}
 .hero-inner {max-width: 1000px; margin: 0 auto;}
 .hero h2 {margin: 0 0 0.5rem 0; font-size: 2rem;}
-.hero p{ margin: 0 0 1.5rem 0; opacity: .85;}
+.hero p{ margin: 0 0 1.5rem 0; opacity: 1; font-size: 1.3em;}
 .hero .btn{display: inline-block; background: #fff; color: #001127; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 600;}
+
+.hero{
+  position: relative;              /* required */
+  background: #000;                /* fallback while image loads */
+  color: #fff;
+  width: 100%;
+  padding: 8rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* use the CSS var --bg-image set by JS (see JS below) */
+  background-image: var(--bg-image, none);
+
+  /* apply grayscale + darker at the same time */
+  filter: grayscale(0%) brightness(60%);
+
+  z-index: 1;               /* sits above background (only) */
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 
 /* Container */

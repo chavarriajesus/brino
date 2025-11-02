@@ -1,11 +1,11 @@
 {
     "showHero": true,
     "hero": {
-        "heading": "Gestiona tu inventario y muestra tus propiedades en línea, sin complicaciones.",
-        "subheading": "Administra tus desarrollos, recibe prospectos y mantén tu sitio web siempre actualizado desde una sola plataforma.",
+        "heading": "Gestiona tu inventario y muestra tus propiedades en línea.",
+        "subheading": "Administra tus desarrollos y mantén tu sitio web siempre actualizado desde una sola plataforma.",
         "ctaText": "Probar gratis",
         "ctaHref": "/admin",
-        "bgImage": "/marketing/assets/images/home_hero_background.jpg"
+        "bgImage": "/marketing/assets/images/features_hero_bg.jpg"
     },
     "sections": [
        

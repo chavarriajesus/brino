@@ -5,7 +5,7 @@
         "subheading": "Publica tus propiedades facilmente en un sitio web personalizado a tu marca",
         "ctaText": "Solicitar Informes",
         "ctaHref": "/admin",
-        "bgImage": "/marketing/assets/images/home_hero_background.jpg"
+        "bgImage": "/marketing/assets/images/home_hero_background_v2.jpg"
     },
     "sections": [
        
@@ -52,7 +52,7 @@
       "addClass": "home-container-right-col",
       "itemSpan": 2,
       "items": [
-        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" } 
+        { "tag": "img", "src": "/marketing/assets/images/home_working_computer.jpg", "alt": "Panel de propiedades" } 
       ]
     }
   ]
@@ -86,7 +86,7 @@
       "addClass": "home-container-right-col",
       "itemSpan": 2,
       "items": [
-        { "tag": "img", "src": "/marketing/assets/images/home_main.png", "alt": "Panel de propiedades" }
+        { "tag": "img", "src": "/marketing/assets/images/home_web_design.jpg", "alt": "Panel de propiedades" }
       ]
     }
   ]

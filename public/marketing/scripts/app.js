@@ -58,7 +58,9 @@ function renderHero(page) {
 
   hero.className = 'hero';
   hero.id = 'hero';
-  if(bgImage) hero.style.backgroundImage = `url('${bgImage}')` ;
+  //if(bgImage) hero.style.backgroundImage = `url('${bgImage}')` ;
+  if(bgImage) hero.style.setProperty('--bg-image', `url('${bgImage}')`);
+  
 
   hero.innerHTML = `
     
