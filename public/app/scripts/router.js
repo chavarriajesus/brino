@@ -1,5 +1,9 @@
 import { LoginPage } from './pages/login.js';
+import { VerifyPage } from './pages/verify.js';
 import { DashboardPage } from './pages/dashboard.js';
+import { ListingsPage } from './pages/listings/propiedades.js';
+//import { AddListingPage } from "../pages/listings/addlisting.js";
+//import { EditListingPage } from "../pages/listings/editlisting.js";
 import { getUser } from './state/store.js';
 
 export function mountRoute(outlet) {
@@ -9,21 +13,15 @@ export function mountRoute(outlet) {
 
   outlet.innerHTML = '';
 
+if (!user) {
+  if (sub === 'login')  {outlet.appendChild(LoginPage()); return;}
+  if (sub === 'verify')  {outlet.appendChild(VerifyPage()); return;}
 
+  history.replaceState({}, '', '/app/login');
+  outlet.appendChild(LoginPage());
+  return;
+}
 
-  if (!user && sub !== 'login') {
-    // redirect to login
-    history.replaceState({}, '', '/app/login');
-    outlet.appendChild(LoginPage());
-    return;
-  }
-
-  if (sub === 'login') {
-    outlet.appendChild(LoginPage());
-    return;
-  }
-
-  // default authenticated route
   outlet.appendChild(DashboardPage());
 }
 
